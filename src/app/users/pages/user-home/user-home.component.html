@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="row">
+
+        <!-- User form -->
+        <div class="col-4">
+            <app-user-form (onFormData)="createUser( $event )">
+            </app-user-form>      
+        </div>
+
+        <!-- User table -->
+        <div class="col-8">
+            <app-user-table [users]="users">
+            </app-user-table>
+        </div>
+
+    </div>
+</div>

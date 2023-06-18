@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+
+    <!-- menu -->
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+
+    <!-- spacer -->
+    <span class="example-spacer"></span>
+
+    <!-- right menu -->
+    <button mat-raised-button [routerLink]="userRoute" class="mx-1">
+        users
+        <mat-icon>group</mat-icon>
+    </button>        
+
+    <button mat-raised-button [routerLink]="homeRoute" class="mx-1">
+        home
+        <mat-icon>home</mat-icon>
+    </button>        
+
+
+</mat-toolbar>

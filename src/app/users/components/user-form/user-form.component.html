@@ -1,0 +1,30 @@
+<form [formGroup]="userForm" (ngSubmit)="submit()" autocomplete="off">
+
+    <!-- Full name -->
+    <mat-form-field appearance="outline">
+        <mat-label>Full name</mat-label>
+        <input matInput formControlName="fullName">
+    </mat-form-field>
+
+    <!-- Email -->
+    <mat-form-field appearance="outline">
+        <mat-label>email</mat-label>
+        <input matInput formControlName="email">
+    </mat-form-field>
+
+    <!-- Address -->
+    <mat-form-field appearance="outline">
+        <mat-label>address</mat-label>
+        <input matInput formControlName="address">
+    </mat-form-field>
+    
+    <button type="submit" 
+            mat-raised-button 
+            color="primary"
+            class="w-100"
+            [disabled]="userForm.invalid">
+        <mat-icon>send</mat-icon>
+        Create user
+    </button>
+
+</form>
